@@ -1,14 +1,6 @@
-var userChoice = prompt("Voce escolhe pedra, papel ou tesoura?");
-var computerChoice = Math.random();
-if (computerChoice < 0.34) {
-	computerChoice = "pedra";
-} else if(computerChoice <= 0.67) {
-	computerChoice = "papel";
-} else {
-	computerChoice = "tesoura";
-} console.log("Computer: " + computerChoice);
-
-
+//
+// Learned: http://www.codecademy.com/DevWellington
+//
 var compare = function(choice1, choice2) {
     if(choice1 === choice2) {
         return "O resultado e um empate";
@@ -33,5 +25,17 @@ var compare = function(choice1, choice2) {
         }        
     }
 };
+
+
+var userChoice = prompt("Voce escolhe pedra, papel ou tesoura?");
+var computerChoice = Math.random();
+if (computerChoice < 0.34) {
+	computerChoice = "pedra";
+} else if(computerChoice <= 0.67) {
+	computerChoice = "papel";
+} else {
+	computerChoice = "tesoura";
+} console.log("Computer: " + computerChoice);
+
 
 compare(userChoice, computerChoice);
